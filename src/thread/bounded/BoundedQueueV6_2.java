@@ -11,7 +11,7 @@ public class BoundedQueueV6_2 implements BoundedQueue{
     private BlockingQueue<String> queue;
 
     public BoundedQueueV6_2(int max) {
-        this.queue = new ArrayBlockingQueue<>(max);
+        this.queue = new ArrayBlockingQueue<>(max); // 큐 크기를 지정해줘야 한다.
     }
 
     @Override
